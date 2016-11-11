@@ -13,7 +13,7 @@ class BookList extends Component{
     buildList() {
          return this.props.books.map((book) => {
             return (
-                <li key={book.id} onClick={() => this.props.selectBook(book)}>
+                <li className="list-group-item" key={book.id} onClick={() => this.props.selectBook(book)}>
                     {book.title}
                 </li>
             );
@@ -31,7 +31,7 @@ class BookList extends Component{
     // Step 4: Build ul element and render it
     render(){
         return(
-            <ul>
+            <ul className="list-group">
                 {this.buildList()}
             </ul>
         )

@@ -7,14 +7,13 @@ export class SelectedBookDetails extends Component{
             return (<div>Select a Book...</div>);
         }
         return (
-            <div>
-                <h1>{this.props.activeBook.title}</h1>
-                <h5>Author: {this.props.activeBook.author}</h5>
-                <h5>Published Year: {this.props.activeBook.published_year}</h5>
-            </div>
+            <address>
+                <strong>{this.props.activeBook.title}</strong><br/>
+                Author: {this.props.activeBook.author}<br/>
+                Published Year: {this.props.activeBook.published_year}<br/>
+            </address>
         );
     }
-    
 }
 
 
