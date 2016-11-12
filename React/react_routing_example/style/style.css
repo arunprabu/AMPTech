@@ -1,0 +1,12 @@
+.starter-template{
+	margin-top : 120px;
+}
+
+.active{
+	color: red !important;
+}
+
+.img-responsive{
+	width: 100px;
+	height: 70px;
+}
